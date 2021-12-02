@@ -1,0 +1,50 @@
+@import '../../scss/resets';
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.profile{
+    width: 100%;
+    height: 100%;
+    background: url('../../img/landing-bg.jpg');
+
+    .profile-pic{
+        margin-bottom: 30px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 4px solid rgb(75, 75, 75);
+        /* display: inline-block; */
+        // background-color: #282c34;
+        box-shadow: 5px 5px 5px black;
+
+    }
+
+    #{&}-flex-box{
+        padding-top: 6%;
+        @include flexCenter(column);
+    }
+
+    #{&}-container{
+        margin-top: 5px;
+        @include flexCenter(column);
+        width: 450px;
+        height: 500px;
+        background: rgba(150, 150, 150, 0.959);
+        box-shadow: 5px 5px 8px black;
+    }
+    .edit-user-container{
+        @include flexCenter(column);
+    }
+
+    .edit-button{
+        width: 60%;
+    }
+    Button {
+        margin: 10px;
+        box-shadow: 2px 2px 5px black;
+    }
+
+    h2, h4 {
+        margin: 15px;
+    }
+}
