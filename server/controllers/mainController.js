@@ -15,7 +15,7 @@ module.exports = {
         axios.get(`${baseUrl}&sort_by=${sortBy}&location=${location}`, config)
             .then( restaurants => {
                 res.status(200).send(restaurants.data.businesses)})
-            // .catch(err => console.log(err))
+            .catch(err => console.log(err))
     },
     getRestaurantById: (req, res) => {
         const {id} = req.params
@@ -30,7 +30,7 @@ module.exports = {
             .then(restaurant => {
                 res.status(200).send(restaurant.data)
             })
-            // .catch(err => console.log(err))
+            .catch(err => console.log(err))
     },
     addRestaurant: (req, res) => {
         const  {userId, restaurantId, restaurantUrl, restaurantName, restaurantImg, phone,
@@ -100,7 +100,7 @@ module.exports = {
             //email.
             let info = await transporter.sendMail({
                 from: `Restaurant Finder <${EMAIL}>`,
-                to: 'tedhungkk@gmail.com',
+                to: 'whizman13@yahoo.com',
                 subject: 'NodeMailer Test',
                 //text is for plain text support if the html cannot load properly
                 text: 'This is a NodeMailer Test',
