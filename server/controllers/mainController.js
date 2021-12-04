@@ -12,7 +12,7 @@ module.exports = {
             }
         };
 
-        axios.get(`${baseUrl}&sort_by=${sortBy}&location="${location}""`, config)
+        axios.get(`${baseUrl}&sort_by=${sortBy}&location=${location}`, config)
             .then( restaurants => {
                 res.status(200).send(restaurants.data.businesses)})
             .catch(err => console.log(err))
