@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "server/index.js",
-  "proxy": "http://localhost:5432",
+  "proxy": "http://localhost:5050/",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@testing-library/jest-dom": "^5.15.1",
@@ -11,6 +11,8 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.24.0",
     "bcryptjs": "^2.4.3",
+    "cjs": "^0.0.11",
+    "core-util-is": "^1.0.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
