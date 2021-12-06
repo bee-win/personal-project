@@ -18,7 +18,7 @@ app.use(session({
 }))
 
 massive({
-    connectionString: 'postgres://vmsgxgwzxeipcn:30ff9c1c9b2722bd80966616590e32c531a2ffb4390a4dacda52437f65ea1dba@ec2-52-45-183-77.compute-1.amazonaws.com:5432/d3qrn0ap20u272',
+    connectionString: CONNECTION_STRING,
     ssl: { rejectUnauthorized: false }
 }).then(db => {
     app.set('db', db)
